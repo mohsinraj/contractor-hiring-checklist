@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contractor Hiring Checklist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Contractor Hiring Checklist</h1>
+      <p class="tagline">Questions to ask before hiring an architect, plumber, roofer, or electrician.</p>
+    </header>
+
+    <main class="main">
+      <section class="controls">
+        <label for="role-filter">Filter by role:</label>
+        <select id="role-filter">
+          <option value="all">All Roles</option>
+          <option value="architect">Architect</option>
+          <option value="plumber">Plumber</option>
+          <option value="roofer">Roofer</option>
+          <option value="electrician">Electrician</option>
+        </select>
+
+        <div class="btn-row">
+          <button id="select-all" class="btn">Select All</button>
+          <button id="clear-all" class="btn ghost">Clear All</button>
+        </div>
+      </section>
+
+      <section class="checklist-section">
+        <ul id="checklist" class="checklist" aria-live="polite"></ul>
+      </section>
+
+      <section class="export">
+        <h2>Export Checklist</h2>
+        <div class="export-row">
+          <button id="download-csv-all" class="btn primary">Download All as CSV</button>
+          <button id="download-csv-selected" class="btn">Download Selected as CSV</button>
+        </div>
+        <div class="export-row">
+          <button id="download-txt-all" class="btn primary">Download All as TXT</button>
+          <button id="download-txt-selected" class="btn">Download Selected as TXT</button>
+        </div>
+        <p class="note">CSV files can be opened in Excel or Google Sheets.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built for contractors & homeowners • <a href="#" id="resource-link">Concrete Contractor</a></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
