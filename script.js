@@ -40,7 +40,7 @@ const downloadTxtAllBtn = document.getElementById('download-txt-all');
 const downloadTxtSelectedBtn = document.getElementById('download-txt-selected');
 const resourceLink = document.getElementById('resource-link');
 
-resourceLink.setAttribute('href', 'https://example.com/concrete-contractor');
+resourceLink.setAttribute('href', 'https://premierbuilders.us/contractors/detroit-mi/concrete-contractors');
 resourceLink.setAttribute('target', '_blank');
 
 // Utility: render list items
